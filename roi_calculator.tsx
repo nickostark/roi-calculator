@@ -114,7 +114,7 @@ const ROICalculator = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-start mb-6">
           <img
-            src="assets/cognistark_logo_nobg.png"
+            src="/cognistark_logo_nobg.png"
             alt="CogniStark logo"
             className="h-12 w-12 sm:h-14 sm:w-14"
           />
