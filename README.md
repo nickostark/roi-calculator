@@ -15,6 +15,10 @@ Read full article including deep-dive analysis on Substack
 
 Each scenario models time savings, API cost avoidance (Whisper + Claude/GPT-4), VPS hosting costs, and break-even timeline.
 
+## Assumptions
+API costs at 0.025/min (Whisper, Claude Sonnet/GPT-4), 5-hour setup, ~$15/month VPS hosting
+Your actual savings will vary based on call volume, audio quality, and hourly rate.
+
 ## Setup
 
 ```bash

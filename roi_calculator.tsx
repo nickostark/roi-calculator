@@ -112,24 +112,32 @@ const ROICalculator = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-4 sm:p-8">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-start mb-6">
-          <img
-            src="/cognistark_logo_nobg.png"
-            alt="CogniStark logo"
-            className="h-12 w-12 sm:h-14 sm:w-14"
-          />
-        </div>
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <Lock className="w-8 h-8 text-slate-700" />
-            <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              Private Transcription ROI
-            </h1>
+        <div className="grid grid-cols-3 items-center mb-8">
+          <div>
+            <img
+              src="/cognistark_logo_nobg.png"
+              alt="CogniStark logo"
+              className="h-12 w-12 sm:h-14 sm:w-14"
+            />
           </div>
+          <div className="flex flex-col items-center justify-center -mr-24">
+            <div className="flex items-center gap-3 whitespace-nowrap">
+              <Lock className="w-8 h-8 text-slate-700" />
+              <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">
+                Private Transcription ROI
+              </h1>
+            </div>
+            <p className="text-slate-600 text-lg mt-2">
+              Cost analysis: Self-hosted transcription vs. external APIs
+            </p>
+          </div>
+          <div />
+        </div>
+        {/* <div className="text-center mb-8">
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
             Real cost analysis: Self-hosted transcription vs. external APIs
           </p>
-        </div>
+        </div> */}
 
         {/*** Scenario selector ***/}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-8">
@@ -315,10 +323,21 @@ const ROICalculator = () => {
         </div>
 
         {/*** Footnote ***/}
-        <div className="mt-8 text-center text-sm text-slate-500">
+        {/* <div className="mt-8 text-center text-sm text-slate-500">
           <p>Assumptions: API costs at {apiCostPerMinute}/min (Whisper, Claude Sonnet/GPT-4), {setupHours}-hour setup, ~${Math.ceil(vpsYearlyCost/12)}/month VPS hosting</p>
           <p className="mt-2">Your actual savings will vary based on call volume, audio quality, and hourly rate</p>
-        </div>
+        </div> */}
+        <footer className="mt-16 text-center text-slate-500 text-sm space-y-1">
+          <p>© 2026 CogniStark.com. This page’s code is open-sourced on <a href="https://github.com/nickostark/roi-calculator">GitHub</a>.</p>
+          <p>
+            <a
+              href="mailto:contact@cognistark.com"
+              className="text-slate-600 hover:text-slate-800 underline decoration-slate-400/70 hover:decoration-slate-700 transition"
+            >
+              contact@cognistark.com
+            </a>
+          </p>
+        </footer>
       </div>
     </div>
   );
