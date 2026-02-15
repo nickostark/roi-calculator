@@ -1,7 +1,7 @@
 {
   "name": "roi-calculator",
   "private": true,
-  "homepage": "https://nickostark.github.io/roi-calculator",
+  "homepage": "https://roi-calculator.cognistark.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
