@@ -112,26 +112,16 @@ const ROICalculator = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-4 sm:p-8">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-3 items-center mb-8">
-          <div>
-            <img
-              src="/cognistark_logo_nobg.png"
-              alt="CogniStark logo"
-              className="h-12 w-12 sm:h-14 sm:w-14"
-            />
+        <div className="text-center mb-8">
+          <div className="flex items-center justify-center gap-3">
+            <Lock className="w-8 h-8 text-slate-700" />
+            <h1 className="text-xl sm:text-2xl font-bold text-slate-900">
+              Private Transcription ROI
+            </h1>
           </div>
-          <div className="flex flex-col items-center justify-center -mr-24">
-            <div className="flex items-center gap-3 whitespace-nowrap">
-              <Lock className="w-8 h-8 text-slate-700" />
-              <h1 className="text-xl sm:text-2xl font-bold text-slate-900">
-                Private Transcription ROI
-              </h1>
-            </div>
-            <p className="text-slate-600 text-lg mt-2">
-              Self-hosted vs. external APIs
-            </p>
-          </div>
-          <div />
+          <p className="text-slate-600 text-sm mt-2">
+            Self-hosted vs. external APIs
+          </p>
         </div>
         {/* <div className="text-center mb-8">
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
@@ -328,7 +318,7 @@ const ROICalculator = () => {
           <p className="mt-2">Your actual savings will vary based on call volume, audio quality, and hourly rate</p>
         </div> */}
         <footer className="mt-16 text-center text-slate-500 text-sm space-y-1">
-          <p>© 2026 CogniStark.com. This page’s code is open-sourced on <a href="https://github.com/nickostark/roi-calculator">GitHub</a>.</p>
+          <p>© 2026 CogniStark.com</p>
           <p>
             <a
               href="mailto:contact@cognistark.com"
