@@ -123,12 +123,12 @@ const ROICalculator = () => {
           <div className="flex flex-col items-center justify-center -mr-24">
             <div className="flex items-center gap-3 whitespace-nowrap">
               <Lock className="w-8 h-8 text-slate-700" />
-              <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">
+              <h1 className="text-xl sm:text-2xl font-bold text-slate-900">
                 Private Transcription ROI
               </h1>
             </div>
             <p className="text-slate-600 text-lg mt-2">
-              Cost analysis: Self-hosted transcription vs. external APIs
+              Self-hosted vs. external APIs
             </p>
           </div>
           <div />
